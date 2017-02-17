@@ -1,0 +1,26 @@
+section.material
+    .tab
+        .tab_block.tab_block__active
+            span ФОТО
+        .tab_block
+            span ВИДЕО
+    section.material_photo
+        - var arr = ['https://yadi.sk/i/nFRtV5Ce3E9iAk','https://yadi.sk/i/8RLzCAc53ECtw6', 'https://yadi.sk/i/8RLzCAc53ECtw6', 'https://yadi.sk/i/8RLzCAc53ECtw6','https://yadi.sk/i/8RLzCAc53ECtw6','https://yadi.sk/i/8RLzCAc53ECtw6']
+        -for(var i = 0; i< 5; i++)
+            .material_photo_block
+                .material_photo_block_img
+                    a.ydisk-onready-example(href=arr[i], target='_blank',  data-width= "460", data-height= "300") Фото1
+                    a.ydisk-onready-example.get_item_list(href="https://yadi.sk/d/d0uPrKud3EB3Cw", target="_blank")
+                p 23 / 12 / 2017 / Вторник Сюрприз от женщин на 23 февраля Сюрприз от женщин на 23 февраля
+                    strong Сюрприз от женщин на 23 февраля Сюрприз от женщин на 23 февраля
+                a.ydisk-onready-example(download="download", href="https://yadi.sk/d/d0uPrKud3EB3Cw", target="_blank")
+                    span Скачать альбом
+    section.material_video
+        -for(var i = 0; i< 5; i++)
+            .material_video_block
+                .material_video_block_img
+                    a.ydisk-onready-example(href='https://yadi.sk/i/FM8PMtzrpgYcp', target='_blank',  data-width= "460", data-height= "300") Фото1
+                p 23 / 12 / 2017 / Вторник
+                    strong Сюрприз от женщин на 23 февраля Сюрприз от женщин на 23 февраля
+                a.ydisk-onready-example(download="download", href="https://yadi.sk/i/FM8PMtzrpgYcp", target="_blank",  data-width= "460", data-height= "300")
+                    span Скачать видео

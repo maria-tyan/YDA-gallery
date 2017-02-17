@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url('../fonts/Robotocondensedlight.woff2') format('woff2'), url('../fonts/Robotocondensedlight.woff') format('woff'), url('../fonts/Robotocondensedlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url('../fonts/Robotocondensedlightitalic.woff2') format('woff2'), url('../fonts/Robotocondensedlightitalic.woff') format('woff'), url('../fonts/Robotocondensedlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url('../fonts/Robotocondensed.woff2') format('woff2'), url('../fonts/Robotocondensed.woff') format('woff'), url('../fonts/Robotocondensed.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url('../fonts/Robotocondenseditalic.woff2') format('woff2'), url('../fonts/Robotocondenseditalic.woff') format('woff'), url('../fonts/Robotocondenseditalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('../fonts/Robotocondensedbold.woff2') format('woff2'), url('../fonts/Robotocondensedbold.woff') format('woff'), url('../fonts/Robotocondensedbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url('../fonts/Robotocondensedbolditalic.woff2') format('woff2'), url('../fonts/Robotocondensedbolditalic.woff') format('woff'), url('../fonts/Robotocondensedbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: local('Lemon Tuesday'), local('LemonTuesday'), url('../fonts/Lemontuesday.woff2') format('woff2'), url('../fonts/Lemontuesday.woff') format('woff'), url('../fonts/Lemontuesday.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url("../fonts/fontawesome-webfont.eot") format("eot"),
+    url("../fonts/fontawesome-webfont.svg") format("svg"),
+    url('../fonts/fontawesome-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+

@@ -1,0 +1,362 @@
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 163px;  
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    &.auten {
+        overflow: hidden;
+        height: 100vh;
+        padding-bottom: 0;
+
+    }
+    &.lnd {
+        .menu {
+            background-color: transparent;
+        }
+    }
+}
+html {
+    overflow-x: hidden;
+}
+.elements {
+    will-change: transform,transition,left,right,top;
+
+}
+select {
+    width: 200px;
+}
+.clear {
+    clear: both;
+    display: block;
+}
+
+body{
+    @include font("Roboto Condensed", normal, 16px, 400);
+    color:$dark;
+    width:100%;
+    min-width: 960px;
+    overflow-x: hidden;
+    font-size: 100%;
+}
+h1,h2,h3,h4,h5,h6, section,article,p,div,a,ul,li{
+    box-sizing: border-box;
+    position: relative;
+}
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    @include font($lt,normal,100px,400);
+    color: $darkGray;
+}
+h2{
+    @include font($lt,normal,100px, 400);
+    color:$dark;
+    text-align: center;
+    line-height: 90px;
+
+}
+h3{
+    @include font($rc, normal, 30px, 900);
+    color:$dark;
+}
+h4 {
+    @include font($rc, normal,18px, 900);
+    color:$dark;
+}
+p {
+    @include font($rc, normal, 18px, 400);
+    color: $darkGray;
+}
+//ul,ol {
+//  margin-top: 20px;
+//  margin-bottom: 20px;
+//  list-style-position: inside;
+//  li {
+//    display: list-item;
+//    @include font($rc, normal, 18px, 400);
+//    color: $darkGray;
+//  }
+//}
+//ul {
+//  li {
+//    list-style-type: disc;
+//  }
+//}
+//
+//ol {
+//  li {
+//    list-style-type: decimal;
+//  }
+//}
+a.green, a.gray, a.green-dot, a.gray-dot{
+    @include font($rc, normal, 18px, 400);
+    color: $darkGray;
+    display: inline-block;
+    @include font(Roboto Condensed, normal, 18px, 400);
+    @include transition(all .3s linear);
+}
+a.green{
+    color:$green;
+    border-bottom:1px solid $green;
+    &:hover{
+        border-bottom:1px solid transparent;
+    }
+}
+a.gray{
+    color: $darkGray;
+    border-bottom:1px solid $darkGray;
+    &:hover{
+        border-bottom:1px solid transparent;
+    }
+}
+a.green-dot{
+    color:$green;
+    border-bottom:1px dotted $green;
+    &:hover{
+        border-bottom:1px dotted transparent;
+    }
+}
+a.gray-dot{
+    color: $darkGray;
+    border-bottom:1px dotted $darkGray;
+    &:hover{
+        border-bottom:1px dotted transparent;
+    }
+}
+.center_img{
+    img{
+        position: absolute;
+        top:50%;
+        left:50%;
+        @include transform(translate(-50%,-50%))
+    }
+}
+.arrow_left {
+    position: fixed;
+    right: 50px;
+    bottom: 150px;
+}
+.btn-green-scale {
+    font-family: $rc;
+    position: relative;
+    display: inline-block;
+    max-width: 216px;
+    width:100%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: $green;
+    text-transform:uppercase;
+    font-size: 16px;
+    line-height: 36px;
+    box-sizing: border-box;
+    border-radius:26px;
+    span{
+        z-index: 1;
+        color:  $darkGray;
+        font-size: 16px;
+        line-height: 36px;
+        text-align: center;
+        position: relative;
+        display: block;
+        pointer-events: none;
+        transition: 0.5s ease-in-out;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    &::before{
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        left:50%;
+        top:50%;
+        content: "";
+        z-index: 0;
+        border-radius:26px;
+        transform:translate(-50%,-50%);
+        background-color: $greenHover;
+        transition: 0.5s ease-in-out;
+    }
+}
+.btn-green-scale:hover:before, .btn-gray-scale:hover:before {
+    width:100%;
+    height:100%;
+}
+.btn-gray-scale {
+    position: relative;
+    display: inline-block;
+    max-width: 216px;
+    width:100%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: $dark;
+    text-transform:uppercase;
+    font-size: 16px;
+    line-height: 36px;
+    box-sizing: border-box;
+    border-radius:26px;
+    span{
+        z-index: 1;
+        color:  #ffffff;
+        font-size: 16px;
+        line-height: 36px;
+        text-align: center;
+        position: relative;
+        display: block;
+        pointer-events: none;
+        transition: 0.5s ease-in-out;
+        font-weight: bold;
+        overflow: hidden;
+    }
+    &::before{
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        left:50%;
+        top:50%;
+        content: "";
+        z-index: 0;
+        border-radius:26px;
+        transform:translate(-50%,-50%);
+        background-color: $darkGray;
+        transition: 0.5s ease-in-out;
+    }
+}
+.btn-slide {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 4px solid $green;
+    pointer-events: auto;
+    border-radius: 25px;
+    background-color: $green;
+    transition: $standart_transition;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-family: $rc !important;
+    font-weight: 700 !important;
+    @include font($rc,normal,16px,700);
+    color: $darkGray;
+    &:before {
+        margin-right: 15px;
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 50%;
+        transition: $standart_transition;
+        vertical-align: middle;
+        font-family: $fa !important;
+        font-weight: 400 !important;
+        color: $white;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100px;
+    }
+    &:hover {
+        width: 200px;
+        transition: $standart_transition;
+        &:before {
+            transition: $standart_transition;
+            background-color: $white;
+            color: $green;
+        }
+    }
+}
+
+.btn-style.btn-style_round-green{
+    position: relative;
+    display: block;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: $green;
+    transition:.4s linear;
+    &:hover{
+        background-color: $greenHover;
+        cursor: pointer;
+    }
+    &::before{
+        position: absolute;
+        display: block;
+        top:50%;
+        left:50%;
+        content: '\f061';
+        font-family: FontAwesome;
+        font-size: 26px;
+        color: $darkGray;
+        transform:translate(-50%,-50%);
+    }
+}
+.btn-arrow-gray{
+    display: block;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: $darkGray;
+    transition:.4s linear;
+    &:hover{
+        cursor: pointer;
+    }
+    &::after{
+        position: absolute;
+        display: block;
+        top:50%;
+        left:50%;
+        font-family: FontAwesome;
+        font-size: 26px;
+        color: #ffffff;
+        transform:translate(-50%,-50%);
+    }
+}
+.arrow_up{
+    display: none;
+    position: fixed;
+    bottom:80px;
+    right:50px;
+    opacity:0.8;
+    z-index: 9999;
+    &:hover{
+        cursor: pointer;
+    }
+    &:after {
+        content: "\f062";
+    }
+    &:hover{
+        background-color: $dark;
+    }
+}
+.arrow_left{
+    &:after {
+        content: "\f060";
+    }
+    &:hover{
+        background-color: $dark;
+    }
+}
+input, textarea{
+    transition:all .5s;
+    overflow: hidden;
+    &::-webkit-input-placeholder {color: $softGray;opacity:1;}
+    &::-moz-placeholder          {color: $softGray;opacity:1;}
+    &:-moz-placeholder           {color: $softGray;opacity:1;}
+    &:-ms-input-placeholder      {color: $softGray;opacity:1;}
+}
+input, textarea{
+    &:focus::-webkit-input-placeholder {opacity:0;transform:translateX(150%);transition:all .5s;}
+    &:focus::-moz-placeholder          {opacity:0;transform:translateX(150%);transition:all .5s;}
+    &:focus:-moz-placeholder           {opacity:0;transform:translateX(150%);transition:all .5s;}
+    &:focus:-ms-input-placeholder      {opacity:0;transform:translateX(150%);transition:all .5s;}
+}

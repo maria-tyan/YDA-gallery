@@ -1,0 +1,58 @@
+{
+  "name": "YDA-gallery",
+  "version": "1.0.0",
+  "description": "YDA-gallery",
+  "main": "./dev/js/index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "maria-tyan",
+  "license": "ISC",
+  "browserify": {
+    "transform": "browserify-shim"
+  },
+  "browser": {
+    "custom-el":"./dev/js/plugin/custom_el.js",
+    "migrate":"./dev/js/plugin/migrate.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "devDependencies": {
+    "bemto.jade": "^1.0.3",
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-js-obfuscator": "^1.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-plumber": "^1.1.0",
+    "gulp-regex-replace": "^0.2.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "2.1.4",
+    "jquery-ui": "^1.12.1",
+    "jquery-validation": "^1.16.0",
+    "jquery.inputmask": "^3.3.3",
+    "npmignore": "^0.2.0",
+    "particles.js": "^2.0.0",
+    "sass-math": "^1.0.0",
+    "snapsvg": "^0.4.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "object-fit-images": "^2.5.9",
+    "gulp-jsbeautifier": "^2.0.4"
+  },
+  "homepage": ""
+}

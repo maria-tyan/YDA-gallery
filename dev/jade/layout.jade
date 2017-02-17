@@ -1,0 +1,14 @@
+include ../../node_modules/bemto.jade/bemto
+include mixins/head.jade
+
++head("Галерея")
+
+
+doctype html
+html(lang='en')
+  body        
+    .wrapper
+        .content
+            block content    
+        include modules/footer.jade
+    script(src='js/bundle.js')

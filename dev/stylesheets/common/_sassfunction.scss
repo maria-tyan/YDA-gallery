@@ -1,0 +1,46 @@
+
+$fa:'FontAwesome';
+$standart_transition : 0.5s  ease-in-out;
+$rc:'Roboto Condensed';
+$lt:'Lemon Tuesday';
+@import 'node_modules/sass-math/math';
+
+@mixin font ($fontName:inherit,$fontStyle:normal,$fontSize:inherit,$fontWeight:inherit) {
+    font-family: $fontName;
+    font-style: $fontStyle;
+    font-size: $fontSize;
+    font-weight: $fontWeight
+}
+
+@mixin transform($argument) {
+    transform: $argument;
+    -moz-transform: $argument;
+    -webkit-transform: $argument;
+    -ms-transform: $argument;
+    -o-transform: $argument;
+}
+
+@mixin transition($argument) {    
+    transition: $argument;
+    -moz-transition: $argument;
+    -webkit-transition: $argument;
+    -ms-transition: $argument;
+    -o-transition: $argument;
+}
+
+@mixin object-fit($fit: fill, $position: null){
+    -o-object-fit: $fit;
+    object-fit: $fit;
+    @if $position {
+        -o-object-position: $position;
+        object-position: $position;
+        font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    } @else {
+        font-family: 'object-fit: #{$fit}';
+    }
+}
+
+
+
+
+
