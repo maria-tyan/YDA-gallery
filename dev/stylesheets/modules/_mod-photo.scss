@@ -1,4 +1,5 @@
 .material {
+    padding-top: 100px;
     .tab {
         text-align: center;
         position: relative;
@@ -9,7 +10,7 @@
             font-family: "Roboto Condensed";
             font-size: 30px;
             font-weight: 700;
-            color: $green;
+            color: $darkAquaGreen;
             margin: 0 15px;
             cursor: pointer;
             transition: $standart_transition;
@@ -24,13 +25,12 @@
                 color: $darkGray;
 
                 &:before {
-                    content: "";
-                    background-color: $green;
+                    content: "\f005";
+                    color: $yellow;
+                    font-family: "FontAwesome";
+                    font-size: 50px;
                     position: absolute;
                     text-align: center;
-                    width: 55px;
-                    height: 55px;
-                    border-radius: 50%;
                     left: 50%;
                     top: 50%;
 
@@ -83,7 +83,7 @@
                 }
 
                 &:before {
-                    content: "\f055";
+                    content: "\f0b2";
                     position: absolute;
                     color: white;
                     font-family: "FontAwesome";
@@ -104,7 +104,7 @@
                     height: 300px;
                     top: 0;
                     left: 0;
-                    background-color: rgba($green, 0.75);
+                    background-color: rgba($darkAquaGreen, 0.75);
                     opacity: 0;
                     z-index: 1;
                     transition: $standart_transition;

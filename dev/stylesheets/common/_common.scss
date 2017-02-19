@@ -40,6 +40,8 @@ select {
 
 body{
     @include font("Roboto Condensed", normal, 16px, 400);
+    background: linear-gradient(to top, $aquaGreen, $lightGray);
+    //background: #c0dfd9;
     color:$dark;
     width:100%;
     min-width: 960px;
@@ -104,8 +106,8 @@ a.green, a.gray, a.green-dot, a.gray-dot{
     @include transition(all .3s linear);
 }
 a.green{
-    color:$green;
-    border-bottom:1px solid $green;
+    color:$yellow;
+    border-bottom:1px solid $yellow;
     &:hover{
         border-bottom:1px solid transparent;
     }
@@ -118,8 +120,8 @@ a.gray{
     }
 }
 a.green-dot{
-    color:$green;
-    border-bottom:1px dotted $green;
+    color:$yellow;
+    border-bottom:1px dotted $yellow;
     &:hover{
         border-bottom:1px dotted transparent;
     }
@@ -152,7 +154,7 @@ a.gray-dot{
     width:100%;
     overflow: hidden;
     cursor: pointer;
-    background-color: $green;
+    background-color: $yellow;
     text-transform:uppercase;
     font-size: 16px;
     line-height: 36px;
@@ -182,7 +184,7 @@ a.gray-dot{
         z-index: 0;
         border-radius:26px;
         transform:translate(-50%,-50%);
-        background-color: $greenHover;
+        background-color: $yellow;
         transition: 0.5s ease-in-out;
     }
 }
@@ -235,10 +237,10 @@ a.gray-dot{
     position: relative;
     width: 50px;
     height: 50px;
-    border: 4px solid $green;
+    border: 4px solid $yellow;
     pointer-events: auto;
     border-radius: 25px;
-    background-color: $green;
+    background-color: $yellow;
     transition: $standart_transition;
     text-transform: uppercase;
     overflow: hidden;
@@ -271,7 +273,7 @@ a.gray-dot{
         &:before {
             transition: $standart_transition;
             background-color: $white;
-            color: $green;
+            color: $yellow;
         }
     }
 }
@@ -282,10 +284,10 @@ a.gray-dot{
     width:60px;
     height:60px;
     border-radius: 50%;
-    background-color: $green;
+    background-color: $yellow;
     transition:.4s linear;
     &:hover{
-        background-color: $greenHover;
+        background-color: $yellow;
         cursor: pointer;
     }
     &::before{
